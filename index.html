@@ -2,10 +2,86 @@
 <html>
 <head>
     <title>shells for the scripting</title>
-    <style src="william.css"></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="william.css" />
 </head>
 <body>
     <h1>shell scripting!</h1>
     <h2>because william shakespeare would've been so proud</h2>
+    <div class="grid-x grid-margin-x" style="text-align: center;">
+    <div class="cell small-3" data-sticky-container>
+    <div class="sticky" data-sticky data-anchor="bulk">
+        <h3>menu</h3>
+        <h5>
+        <ul class="vertical menu" data-drilldown>
+            <li><a href="#0">what is shell scripting?</a></li>
+            <li><a href="#1">pros/cons</a></li>
+        </ul>
+        </h5>
+    </div>
+    </div>
+    <div class="cell small-9" id="bulk" data-something>
+    <p class="turtle">🐢 🐢 🐢</p>
+    <h3 id="0">what is shell scripting?</h3>
+    <div class="grid-x grid-margin-x" style="text-align: center;">
+      <div class="cell small-6">
+        <h5>A shell script is a program designed to be run by a Unix shell. It contains a sequence of commands that can be used to edit files, access data, and other things designed for the terminal. Because it was designed to be run in a shell, the syntax for a shell script is the same as the syntax for the command line.
+        *add filler stuff here*</h5>
+      </div>
+      <div class="cell small-6">
+        <h4>Can be useful for:</h4>
+        <h5>
+        <ul>
+            <li>Administrative tasks
+                <ul><li>e.g. disk backups, system logs</li></ul>
+            </li>
+            <li>Cute small programs
+                <ul><li>e.g. checking the weather, finding out what song you’re currently listening to</li></ul>
+            </li>
+            <li>Program interactions
+                <ul><li>e.g. piping between files</li></ul>
+            </li>
+            <li>Startup scripts
+                <ul><li>e.g. small programs to prototype application ideas for the startup</li></ul>
+            </li>
+        </ul>
+        </h5>
+      </div>
+    </div>
+    <p class="turtle">🐢 🐢 🐢</p>
+    <h3 id="1">pros/cons?</h3>
+    <div class="grid-x grid-margin-x" style="text-align: center;">
+      <div class="cell small-6">
+        <h4>Pros:</h4>
+        <h5>
+        <ul>
+            <li>Easy syntax (same as command line)</li>
+            <li>Writing shell code is often quicker than writing the same code in other languages</li>
+            <li>Closer integration with OS</li>
+            <li>Widely installed (because the only thing necessary to run a shell script is a Unix shell)</li>
+        </ul>
+        </h5>
+      </div>
+      <div class="cell small-6">
+        <h4>Cons:</h4>
+        <h5>
+        <ul>
+        <li>Relatively slow runtime</li>
+        <li>Easy to make costly mistakes
+        <ul><li>e.g. cd vs cp, < (write to a file) vs << (append to a file)</li></ul>
+        </li>
+        <li>Can’t perform complex tasks (since it's limited by what the command line can do)</li>
+        <li>There can be a lack of compatibility between systems
+        <ul><li>e.g. Windows command line is different than Lenovo</li></ul>
+        </li>
+        </ul>
+        </h5>
+      </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>

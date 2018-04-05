@@ -1,9 +1,30 @@
 body {
-	font-family: courier;
 	background-color: #005E7C;
-	align: center;
+	text-align: center;
+	padding: 50px;
+	color: white;
 }
 
 h1 {
 	color: skyblue;
+}
+
+h2 {
+	color: #4CE0D2;
+}
+
+h3 {
+	color: #0094C6;
+}
+
+ul, ol {
+	text-align: left;
+}
+
+.turtle {
+	font-size: 20px;
+}
+
+a {
+	color: #22AAA1;
 }

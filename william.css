@@ -17,6 +17,10 @@ h3 {
 	color: #0094C6;
 }
 
+h4 {
+	color: #ACEDFA;
+}
+
 ul, ol {
 	text-align: left;
 }
@@ -26,6 +30,11 @@ ul, ol {
 }
 
 a {
-	color: #22AAA1;
-	background-color: #005E7C;
+	color: #ACEDFA;
+	background-color: #0094C6;
+}
+
+a:hover {
+	background-color: #4CE0D2;
+	transform: scale(1.02);
 }

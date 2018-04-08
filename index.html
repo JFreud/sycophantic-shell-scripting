@@ -174,17 +174,42 @@
     </div>
   <h4 id = "2e"> Loops </h4>
   <div class="grid-x grid-margin-x" style="text-align: center;">
-    <div class="cell small-4">
-      <h5> For Loop </h4>
-      <h6> insert code thing </h5>
+    <div class="cell small-4" style = "text-align: left;">
+      <h5> For Loop </h5>
+<pre>
+<code>
+for i in 1 2 3 4 5
+do
+  echo "Looping ... number $i"
+done
+        </code>
+      </pre>
     </div>
-    <div class="cell small-4">
-      <h5> While Loop </h4>
-      <h6> insert code thing </h5>
+    <div class="cell small-4" style = "text-align: left;">
+      <h5> While Loop </h5>
+        <pre>
+          <code>
+i=1
+while [ $i -lt 6 ]
+do
+  echo "Looping ... number $i"
+  (( i++ ))
+done
+          </code>
+        </pre>
     </div>
-    <div class="cell small-4">
-      <h5> Until Loop </h4>
-      <h6> insert code thing </h5>
+    <div class="cell small-4" style = "text-align: left;">
+      <h5> Until Loop </h5>
+<pre>
+<code>
+i=1
+until [ $i -gt 5 ]
+do
+  echo "Looping ... number $i"
+  (( i++ ))
+done
+</code>
+</pre>
     </div>
   </div>
   <p class="turtle">🐢 🐢 🐢</p>

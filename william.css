@@ -25,6 +25,14 @@ ul, ol {
 	text-align: left;
 }
 
+pre code {
+  background-color: #eee;
+	overflow-x:scroll;
+  border: 1px solid #ACEDFA;
+  display: block;
+  padding: 20px;
+}
+
 .turtle {
 	font-size: 20px;
 }

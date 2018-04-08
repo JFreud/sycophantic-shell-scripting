@@ -212,6 +212,31 @@ done
 </pre>
     </div>
   </div>
+  <h4 id = "2f"> Functions </h4>
+  <div class="grid-x grid-margin-x" style="text-align: center;">
+    <div class="cell small-6" style = "text-align: left;">
+    <pre>
+      <code>
+function_name () {
+  # parameter 1 is $1
+  local var1=1
+  echo $(( $var1 + $1 ))
+  return 0
+}
+a=$(function_name 10)
+echo $a
+</code>
+</pre>
+  </div>
+  <div class = "cell small-6" style = "font-size: 20px; margin-top: 15px;">
+    <ul>
+      <li> Alternative: function function_name{} </li>
+      <li> The () is purely ornamental </li>
+      <li> Note: return is the return status of the function. A value of 0 means it completed successfully. </li>
+      <li> Bash functions do not have return values. Use command substitution. </li>
+    </ul>
+    </div>
+  </div>
   <p class="turtle">🐢 🐢 🐢</p>
   <h3 id = "3"> Code Examples </h3>
   <div class="grid-x grid-margin-x" style="text-align: center;">

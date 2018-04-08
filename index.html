@@ -18,6 +18,7 @@
             <li style="background-color: #005E7C;"><a href="#1">pros/cons</a></li>
             <li style="background-color: #005E7C;"><a href="#2">syntax</a></li>
             <li style="background-color: #005E7C; text-align: right;"><a href="#2a">useful characters</a></li>
+            <li style="background-color: #005E7C; text-align: right;"><a href="#2b">variables</a></li>
         </ul>
         </h5>
     </div>
@@ -83,7 +84,7 @@
     <p class="turtle">🐢 🐢 🐢</p>
     <h3 id="2"> Syntax </h3>
     <div class="grid-x grid-margin-x" style="text-align: center;">
-      <!-- <div class = "cell small-6"> -->
+      <div class="cell">
         <h4 id = "2a"> Useful Characters </h4>
         <h5>
           <ul>
@@ -95,9 +96,32 @@
             <li> All the ones you use in the command line (pipes, asterisks, gang signs, etc) </li>
           <ul>
         </h5>
+      </div>
     </div>
-
-      <!-- </div> -->
+    <div class="grid-x grid-margin-x" style="text-align: center;">
+      <div class="cell">
+      <h4 id = "2b"> Variables </h4>
+      <h5>
+        <ul>
+          <li> Variable assignment </li>
+          <ul style = "list-style-type: circle;">
+            <li> <i>num</i>=3 (no space) </li>
+          </ul>
+          <li> Read variables using $ </li>
+          <ul style = "list-style-type: circle;">
+            <li> echo <i>“$num”</i> (not single quote)</li>
+            <li> substitution occurs before command is run </li>
+          </ul>
+          <li> Command line arguments are $1-9 </li>
+          <ul style = "list-style-type: circle;">
+            <li> <i>cp $1 $2</i> copies from the first argument to the second </li>
+          </ul>
+          <li> <i>variable=$( command )</i> saves output of command to variable </li>
+          <li> <i>read input</i> reads users input into variable input </li>
+        </ul>
+      </h5>
+    </div>
+    </div>
     </div>
     </div>
     <script src="js/vendor/jquery.js"></script>

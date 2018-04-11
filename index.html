@@ -108,21 +108,17 @@
       <h4 id = "2b"> Variables </h4>
       <h5>
         <ul>
-          <li> Variable assignment </li>
-          <ul style = "list-style-type: circle;">
-            <li> <i>num</i>=3 (no space) </li>
-          </ul>
-          <li> Read variables using $ </li>
-          <ul style = "list-style-type: circle;">
-            <li> echo <i>“$num”</i> (not single quote)</li>
-            <li> substitution occurs before command is run </li>
-          </ul>
-          <li> Command line arguments are $1-9 </li>
-          <ul style = "list-style-type: circle;">
-            <li> <i>cp $1 $2</i> copies from the first argument to the second </li>
-          </ul>
-          <li> <i>variable=$( command )</i> saves output of command to variable </li>
-          <li> <i>read input</i> reads users input into variable input </li>
+          <li> Variable assignment </li><br>
+            <pre><code style="text-align: left;">num=3 # no space </code></pre><br>
+          <li> Read variables using $ </li><br>
+            <pre><code style="text-align: left;">echo "$num" # not single quote, must use double quotes
+# substitution occurs before command is run</code></pre><br>
+          <li> Command line arguments are $1-9 </li><br>
+            <pre><code style="text-align: left;">cp $1 $2 # copies from the first argument to the second</code></pre><br>
+          <li> Use $ to save the output of a command to a variable </li><br>
+          <pre><code style="text-align: left;">variable=$( command ) # saves output of command to variable </code></pre><br>
+          <li> read allows the script to take in a user input </li><br>
+          <pre><code style="text-align: left;">read input # reads users input into variable input </code></pre>
         </ul>
       </h5>
     </div>
@@ -132,12 +128,12 @@
       <h4 id = "2c"> Arithmetic </h4>
       <h5>
         <ul>
-          <li> Do math using let </li>
-            <code style="text-align: left;">let "a = 5 + 4" # when using quotes, you can have spaces</code>
-            <code style="text-align: left;">let a=5+4 #can’t have spaces when not using quotes</code>
-          <li> You can use double brackets $(( expression )) format </li>
-            <code style="text-align: left;">a=$(( $a + 1 ))</code>
-            <code style="text-align: left;">(( a ++ ))</i></code>
+          <li> Do math using let </li><br>
+            <pre><code style="text-align: left;">let "a = 5 + 4" # when using quotes, you can have spaces</code></pre><br>
+            <pre><code style="text-align: left;">let a=5+4 #can’t have spaces when not using quotes</code></pre><br>
+          <li> You can use double brackets $(( expression )) format </li><br>
+            <pre><code style="text-align: left;">a=$(( $a + 1 ))</code></pre><br>
+            <pre><code style="text-align: left;">(( a ++ ))</i></code></pre>
         </ul>
       </h5>
     </div>
@@ -155,12 +151,14 @@ fi</code>
         </pre>
     </div>
     <div class = "cell small-6">
+    <h5>
       <ul>
         <li> <i>[</i> or <i>test</i> is the condition evaluation utility--it returns 0 if true and 1 if false </li>
         <li> <i>fi</i> ends the if statement </li>
         <li> you can add an <i>elif</i> and another <i>then</i> </li>
         <li> Boolean operators are <i>&&</i> and <i>||</i> </li>
       </ul>
+      </h5>
       </div>
     </div>
   <h4 id = "2e"> Loops </h4>

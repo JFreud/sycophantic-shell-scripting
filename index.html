@@ -149,20 +149,12 @@
     <div class="grid-x grid-margin-x" style="text-align: center;">
       <div class="cell small-6">
         <pre>
-        <code style="text-align: left;">
-        <ul style="list-style-type: none;">
-          <li> if [ &lt;conditional&gt; ] </li>
-          <li> then </li>
-          <ul style="list-style-type: none;">
-            <li> 	&lt;commands&gt; </li>
-          </ul>
-          <li> else </li>
-          <ul style="list-style-type: none;">
-            <li> 	&lt;commands&gt; </li>
-          </ul>
-          <li> fi </li>
-        </ul>
-        </code>
+        <code style="text-align: left;">if [ &lt;conditional&gt; ] 
+then 
+    &lt;commands&gt;
+else
+    &lt;commands&gt;
+fi</code>
         </pre>
     </div>
     <div class = "cell small-6">
@@ -177,49 +169,41 @@
   <h4 id = "2e"> Loops </h4>
       <h5> For Loop </h5>
 <pre>
-<code style="text-align: left;">
-for i in 1 2 3 4 5
+<code style="text-align: left;">for i in 1 2 3 4 5
 do
   echo "Looping ... number $i"
-done
-        </code>
+done</code>
       </pre>
       <h5> While Loop </h5>
         <pre>
-          <code style="text-align: left;">
-i=1
+          <code style="text-align: left;">i=1
 while [ $i -lt 6 ]
 do
   echo "Looping ... number $i"
   (( i++ ))
-done
-          </code>
+done</code>
         </pre>
       <h5> Until Loop </h5>
 <pre>
-<code style="text-align: left;">
-i=1
+<code style="text-align: left;">i=1
 until [ $i -gt 5 ]
 do
   echo "Looping ... number $i"
   (( i++ ))
-done
-</code>
+done</code>
 </pre>
   <h4 id = "2f"> Functions </h4>
   <div class="grid-x grid-margin-x" style="text-align: center;">
     <div class="cell small-6" style = "text-align: left;">
     <pre>
-      <code>
-function_name () {
+      <code>function_name () {
   # parameter 1 is $1
   local var1=1
   echo $(( $var1 + $1 ))
   return 0
 }
 a=$(function_name 10)
-echo $a
-</code>
+echo $a</code>
 </pre>
   </div>
   <div class = "cell small-6" style = "font-size: 20px; margin-top: 15px;">
@@ -237,8 +221,7 @@ echo $a
     <div class = "cell">
       <!-- <h5> Insert Code Examples...</h5> -->
       <pre>
-        <code>
-#! /bin/sh
+        <code>#! /bin/sh
 echo "what's your name?"
 read name
 echo "hello, $name! here's a fortune for you! :)"
@@ -249,12 +232,10 @@ while true; do
   if [ "$input" == "stop" ]; then
     exit 0
   fi
-done
-</code>
+done</code>
 </pre>
 <pre>
-<code>
-#! /bin/sh
+<code>#! /bin/sh
 date=$(date '+%Y-%m-%d %H:%M:%S')
 entry="$1 -- $date\n$2\n"
 if [ $# -eq 2 ]
@@ -266,8 +247,7 @@ if [ $# -eq 2 ]
     echo $entry >> devlog.txt
   else
     echo "Improper format."
-fi
-</code>
+fi</code>
 </pre>
 
 

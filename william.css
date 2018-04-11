@@ -1,48 +1,49 @@
 body {
-	background-color: #005E7C;
-	text-align: center;
-	padding: 50px;
-	color: white;
+    background-color: #005E7C;
+    text-align: center;
+    padding: 50px;
+    color: white;
 }
 
 h1 {
-	color: skyblue;
+    color: skyblue;
 }
 
 h2 {
-	color: #4CE0D2;
+    color: #4CE0D2;
 }
 
 h3 {
-	color: #0094C6;
+    color: #0094C6;
 }
 
 h4 {
-	color: #ACEDFA;
+    color: #ACEDFA;
 }
 
 ul, ol {
-	text-align: left;
+    text-align: left;
 }
 
 pre code {
-  background-color: #eee;
-	overflow-x:scroll;
-  border: 1px solid #ACEDFA;
-  display: block;
-  padding: 20px;
+    background-color: black;
+    overflow-x:scroll;
+    border: 1px solid #ACEDFA;
+    display: block;
+    padding: 20px;
+    color: #ACEDFA;
 }
 
 .turtle {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 a {
-	color: #ACEDFA;
-	background-color: #0094C6;
+    color: #ACEDFA;
+    background-color: #0094C6;
 }
 
 a:hover {
-	background-color: #4CE0D2;
-	transform: scale(1.02);
+    background-color: #4CE0D2;
+    transform: scale(1.02);
 }

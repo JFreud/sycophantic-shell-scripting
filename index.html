@@ -239,9 +239,44 @@ echo $a
   </div>
   <p class="turtle">🐢 🐢 🐢</p>
   <h3 id = "3"> Code Examples </h3>
-  <div class="grid-x grid-margin-x" style="text-align: center;">
+  <div class="grid-x grid-margin-x" style="text-align: left;">
     <div class = "cell">
-      <h5> Insert Code Examples...</h5>
+      <!-- <h5> Insert Code Examples...</h5> -->
+      <pre>
+        <code>
+#! /bin/sh
+echo "what's your name?"
+read name
+echo "hello, $name! here's a fortune for you! :)"
+while true; do
+  fortune | cowsay
+  echo "if you want to stop, type stop and press enter; else, just press enter"
+  read input
+  if [ "$input" == "stop" ]; then
+    exit 0
+  fi
+done
+</code>
+</pre>
+<pre>
+<code>
+#! /bin/sh
+date=$(date '+%Y-%m-%d %H:%M:%S')
+entry="$1 -- $date\n$2\n"
+if [ $# -eq 2 ]
+  then
+    if [ ! -e devlog.txt ]
+    then
+      touch devlog.txt
+    fi
+    echo $entry >> devlog.txt
+  else
+    echo "Improper format."
+fi
+</code>
+</pre>
+
+
     </div>
   </div>
     <p>© Tiffany Chen, Jerome Freudenberg, Jake Goldman</p>
